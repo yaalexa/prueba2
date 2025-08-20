@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "node build/bin/server.js",
+    "postbuild": "copy .env build\\.env || echo No local .env to copy",
     "build": "node ace build",
     "dev": "node ace serve --hmr",
     "test": "node ace test",

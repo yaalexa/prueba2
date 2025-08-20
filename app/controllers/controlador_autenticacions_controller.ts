@@ -7,7 +7,7 @@ import bcrypt from 'bcrypt'
 export default class ControladorAuth {
   public async iniciarSesion({ request, response }: HttpContext) {
     try {
-      const { email, password } = request.body() 
+      const { email, password } = request.body()
 
       const usuario = await Usuario.findBy('email', email)
       if (!usuario) {

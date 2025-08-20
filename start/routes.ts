@@ -1,14 +1,10 @@
 import router from '@adonisjs/core/services/router'
-import MiddlewareAuth from '#middleware/AuthJWT'
-import MiddlewareAdmin from '#middleware/MiddlewareAdmin'
-import ControladorAutenticacion from '#controllers/controlador_autenticacions_controller'
-import ControladorRoles from '#controllers/controlador_roles_controller'
+
 import ControladorUsuarios from '#controllers/controlador_usuarios_controller'
-import TenantMiddleware from '#middleware/tenant_middleware'
 
 // Crear instancias de los controladores
-const authCtrl = new ControladorAutenticacion()
-const rolesCtrl = new ControladorRoles()
+/*const authCtrl = new ControladorAutenticacion()
+const rolesCtrl = new ControladorRoles()*/
 const usuariosCtrl = new ControladorUsuarios()
 
 // Rutas
