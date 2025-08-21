@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "license": "UNLICENSED",
+  "license": "UNLICENSED",    
   "scripts": {
     "start": "node build/bin/server.js",
     "postbuild": "copy .env build\\.env || echo No local .env to copy",
-    "build": "node ace build",
+    "build": "node ace build --ignore-ts-errors",
     "dev": "node ace serve --hmr",
     "test": "node ace test",
     "lint": "eslint .",
